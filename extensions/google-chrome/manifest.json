@@ -1,0 +1,16 @@
+{
+	"manifest_version": 2,
+
+	"name": "Tayeule",
+	"description": "Permet d'envoyer une message à tayeule.com",
+	"version": "1.0",
+
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"css": ["tayeule.css"],
+			"js": ["jquery-1.9.1.js", "tayeule.js"]
+		}
+	]
+
+}
